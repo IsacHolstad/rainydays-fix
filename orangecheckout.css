@@ -1,0 +1,333 @@
+a {
+  color: white;
+}
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.header {
+  background-color: transparent;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(10, 54, 65);
+}
+.header ul a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid rgb(10, 54, 65);
+  text-decoration: none;
+}
+.header ul a:hover {
+  color: chartreuse;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:before {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-btn {
+  display: none;
+}
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.logo {
+  position: absolute;
+  width: 90px;
+  top: 0.1px;
+}
+.yourcart {
+  position: relative;
+  top: 65px;
+  width: 100%;
+  height: 25px;
+  color: white;
+  background-color: rgb(10, 54, 65);
+  border-radius: 50px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+.card {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+.orangejckt {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  width: 150px;
+}
+.title {
+  position: relative;
+  display: inline;
+  text-align: center;
+  padding-right: 40px;
+  font-weight: bold;
+}
+.shippingadress {
+  position: absolute;
+  text-align: center;
+  top: 450px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.shippingcard {
+  position: absolute;
+  background-color: lightgray;
+  height: 300px;
+  width: 100%;
+  top: 540px;
+  border-radius: 5px;
+}
+.name,
+.country,
+.houseadress,
+.postalcode {
+  top: 10px;
+  position: relative;
+  align-content: center;
+  margin-left: 15px;
+}
+.submit {
+  display: inline;
+  position: relative;
+  align-content: center;
+  top: 15px;
+  color: white;
+  background-color: rgb(10, 54, 65);
+  width: 80px;
+  height: 25px;
+}
+.paymentmethods {
+  position: relative;
+  top: 300px;
+  text-align: center;
+}
+.paymentcard {
+  position: relative;
+  top: 350px;
+  width: 100%;
+  height: 300px;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.visalogo {
+  position: absolute;
+  width: 60px;
+  top: 500px;
+  left: 630px;
+}
+.nameoncard,
+.cardnumber,
+.expirationdate,
+.cvc {
+  position: relative;
+  display: inline-flexbox;
+  top: 200px;
+  align-content: center;
+}
+.pay {
+  position: relative;
+  top: 200px;
+  align-content: center;
+  width: 60px;
+  height: 25px;
+  text-align: center;
+  background-color: rgb(10, 54, 65);
+  color: white;
+}
+.footer {
+  position: absolute;
+  top: 1000px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(10, 54, 65);
+  color: white;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .yourcart {
+    position: relative;
+    top: 65px;
+    width: 100%;
+    height: 25px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 50px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .card {
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    background-color: lightgray;
+  }
+  .orangejckt {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    width: 150px;
+  }
+  .title {
+    position: relative;
+    display: inline;
+
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .shippingadress {
+    position: absolute;
+    left: 130px;
+    top: 450px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .shippingcard {
+    position: absolute;
+    background-color: lightgray;
+    height: 300px;
+    width: 100%;
+    top: 540px;
+    border-radius: 5px;
+  }
+  .name,
+  .country,
+  .houseadress,
+  .postalcode {
+    top: 10px;
+    position: relative;
+    align-content: center;
+    margin-left: 125px;
+    display: list-item;
+  }
+  .submit {
+    display: inline;
+    position: relative;
+    align-content: center;
+    top: 15px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    width: 80px;
+    height: 25px;
+    left: 185px;
+  }
+  .paymentmethods {
+    position: relative;
+    top: 300px;
+    text-align: center;
+  }
+  .paymentcard {
+    position: relative;
+    top: 350px;
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+  .visalogo {
+    position: absolute;
+    width: 60px;
+    top: 500px;
+    left: 200px;
+  }
+  .nameoncard,
+  .cardnumber,
+  .expirationdate,
+  .cvc {
+    position: relative;
+    display: list-item;
+    top: 100px;
+    align-content: center;
+  }
+  .pay {
+    position: relative;
+    top: 130px;
+    align-content: center;
+    width: 60px;
+    left: 200px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(10, 54, 65);
+    color: white;
+  }
+  .footer {
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(10, 54, 65);
+    color: white;
+  }
+}

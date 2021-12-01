@@ -1,0 +1,251 @@
+a {
+  color: white;
+}
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.header {
+  background-color: transparent;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(10, 54, 65);
+}
+.header ul a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid rgb(10, 54, 65);
+  text-decoration: none;
+}
+.header ul a:hover {
+  color: chartreuse;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:before {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-btn {
+  display: none;
+}
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.logo {
+  position: absolute;
+  width: 80px;
+  top: 0px;
+  left: 5px;
+}
+.profilcard {
+  position: absolute;
+  top: 350px;
+  width: 350px;
+  border-radius: 5px;
+  background-color: lightgray;
+  height: 600px;
+  left: 45px;
+}
+.sirkel {
+  position: absolute;
+  border-radius: 50px;
+  background-color: darkgray;
+  height: 50px;
+  top: 10px;
+  left: 160px;
+  width: 50px;
+}
+.name,
+.email,
+.adress {
+  position: relative;
+  display: list-item;
+  top: 100px;
+  left: -85px;
+}
+.info {
+  position: absolute;
+  display: list-item;
+  top: 450px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  font-variant-caps: normal;
+  justify-content: space-between;
+}
+.footer {
+  position: relative;
+  top: 1500px;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(10, 54, 65);
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .profilcard {
+    position: absolute;
+    top: 350px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: lightgray;
+    height: 600px;
+    left: 180px;
+  }
+  .sirkel {
+    position: absolute;
+    border-radius: 50px;
+    background-color: darkgray;
+    height: 50px;
+    top: 10px;
+    left: 160px;
+    width: 50px;
+  }
+  .name,
+  .email,
+  .adress {
+    position: relative;
+    display: list-item;
+    top: 100px;
+    left: -85px;
+  }
+  .info {
+    position: absolute;
+    display: list-item;
+    top: 450px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    font-variant-caps: normal;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .profilcard {
+    position: absolute;
+    top: 350px;
+    width: 450px;
+    border-radius: 5px;
+    background-color: lightgray;
+    height: 600px;
+    left: 260px;
+  }
+  .sirkel {
+    position: absolute;
+    border-radius: 50px;
+    background-color: darkgray;
+    height: 50px;
+    top: 10px;
+    left: 190px;
+    width: 50px;
+  }
+  .name,
+  .email,
+  .adress {
+    position: relative;
+    display: list-item;
+    top: 100px;
+    left: -75px;
+  }
+  .info {
+    position: absolute;
+    display: list-item;
+    top: 450px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    font-variant-caps: normal;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,400 @@
+a {
+  color: white;
+}
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.header {
+  background-color: transparent;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(10, 54, 65);
+}
+.header ul a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid rgb(10, 54, 65);
+  text-decoration: none;
+}
+.header ul a:hover {
+  color: chartreuse;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:before {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-btn {
+  display: none;
+}
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.woman {
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  width: 80px;
+  top: 0px;
+  left: 5px;
+}
+.calltoaction {
+  color: white;
+  position: absolute;
+  top: 700px;
+  left: 300px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.footer {
+  position: absolute;
+  top: 2000px;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(10, 54, 65);
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .woman {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+  .calltoaction {
+    position: absolute;
+    color: white;
+    top: 300px;
+    font-weight: bolder;
+    font-size: 20px;
+    left: 70px;
+  }
+  .mensyellowjckt,
+  .mensorangejckt,
+  .womansyellowjckt,
+  .womansorangejckt {
+    position: relative;
+    display: list-item;
+    top: 350px;
+    padding-left: 180px;
+    padding-bottom: 80px;
+
+    width: 120px;
+  }
+  .buy1 {
+    position: absolute;
+    left: 220px;
+    align-items: center;
+    top: 590px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy2 {
+    position: absolute;
+    left: 220px;
+    align-items: center;
+    top: 825px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy3 {
+    position: absolute;
+    left: 220px;
+    align-items: center;
+    top: 1060px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy4 {
+    position: absolute;
+    left: 220px;
+    align-items: center;
+    top: 1300px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .footer {
+    position: absolute;
+    top: 1600px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(10, 54, 65);
+    color: white;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .woman {
+    position: absolute;
+    top: 50px;
+  }
+  .woman {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+  .calltoaction {
+    position: absolute;
+    color: white;
+    top: 400px;
+    font-weight: bolder;
+    font-size: 40px;
+    left: 70px;
+  }
+  .mensyellowjckt,
+  .mensorangejckt {
+    position: relative;
+    display: inline-block;
+    top: 450px;
+    justify-items: space-between;
+    width: 200px;
+    padding: 50px;
+    padding-left: 100px;
+    justify-content: center;
+  }
+  .womansyellowjckt,
+  .womansorangejckt {
+    position: relative;
+    display: inline-block;
+    top: 600px;
+    width: 200px;
+    padding: 50px;
+    padding-left: 100px;
+    justify-content: center;
+  }
+  .buy1 {
+    position: absolute;
+    left: 180px;
+    align-items: center;
+    top: 850px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy2 {
+    position: absolute;
+    left: 532px;
+    align-items: center;
+    top: 850px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy3 {
+    position: absolute;
+    left: 180px;
+    align-items: center;
+    top: 1380px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy4 {
+    position: absolute;
+    left: 535px;
+    align-items: center;
+    top: 1380px;
+    width: 40px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 2000px;
+    background-color: rgb(10, 54, 65);
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .woman {
+    position: absolute;
+    top: 50px;
+  }
+  .woman {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+  .calltoaction {
+    position: absolute;
+    color: white;
+
+    top: 700px;
+    font-weight: bolder;
+    font-size: 50px;
+    left: 100px;
+  }
+  .logo {
+    top: -5px;
+  }
+
+  .womansyellowjckt,
+  .womansorangejckt,
+  .mensyellowjckt,
+  .mensorangejckt {
+    position: relative;
+    display: list-item;
+    top: 1000px;
+
+    justify-items: space-evenly;
+    width: 400px;
+    padding: 70px;
+    padding-left: 450px;
+    justify-content: center;
+  }
+  .buy1 {
+    position: absolute;
+    left: 620px;
+    align-items: center;
+    top: 1700px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy2 {
+    position: absolute;
+    left: 620px;
+    align-items: center;
+    top: 2340px;
+    width: 60px;
+    color: white;
+    height: 30px;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy3 {
+    position: absolute;
+    left: 620px;
+    align-items: center;
+    top: 3000px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .buy4 {
+    position: absolute;
+    left: 620px;
+    align-items: center;
+    top: 3000px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: rgb(10, 54, 65);
+    border-radius: 2px;
+  }
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 4500px;
+    color: white;
+  }
+}
